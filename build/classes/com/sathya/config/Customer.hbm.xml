@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping  package="com.sathya.entity">
+    <class   name="Customer">
+       <id   name="customerId"   column="customer_id"  type="string"  length="12">
+       	  <generator  class="com.sathya.id.CustomerIdGenerator"/>
+       </id>
+       <property  name="customerName"  column="customer_name"   type="string"  length="15"/>
+       <property  name="address"   type="string"  length="20"/>
+    </class>
+</hibernate-mapping>
+
+
+
+
